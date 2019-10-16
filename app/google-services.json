@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012759549519",
+    "firebase_url": "https://twin-flames-85844.firebaseio.com",
+    "project_id": "twin-flames-85844",
+    "storage_bucket": "twin-flames-85844.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012759549519:android:c7d23b1b869bfa7e01fc3a",
+        "android_client_info": {
+          "package_name": "com.usaitech.twinflames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012759549519-agkqqsvjf1fconkld9s9dsciv2qjqho1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usaitech.twinflames",
+            "certificate_hash": "8c258114667fbc8056de79b2cb40105f690ece0d"
+          }
+        },
+        {
+          "client_id": "1012759549519-o0tb8vi41vap3pv25d5of77fa3j26hbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTi2e9XS1LqZNxzhcBkV93s1dCvIG3wOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012759549519-o0tb8vi41vap3pv25d5of77fa3j26hbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

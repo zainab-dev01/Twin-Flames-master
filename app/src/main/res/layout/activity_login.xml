@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Login_A"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.usaitech.twinflames.Accounts.Login_A">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="62%"
+            android:id="@+id/upperlayout"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:overScrollMode="always"
+                android:layout_above="@+id/indicator"
+                />
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_8sdp"
+                app:tabBackground="@drawable/d_indicator_background"
+                app:tabGravity="fill"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:layout_marginRight="@dimen/_80sdp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#ffffff"
+                app:tabIndicatorColor="@null"
+                app:tabRippleColor="@null"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/upperlayout"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_fb_btn_background">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_facebook"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="14dp"
+                android:text="Continue with facebook"
+                style="?android:attr/borderlessButtonStyle"
+                android:onClick="Login"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/gmail_login_layout"
+                android:background="@drawable/google_background">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_gmail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:clickable="false"
+                    android:textAllCaps="true"
+                    android:textSize="14dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@color/transparent"
+                    android:text="Continue with Google"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#aeaeae"
+                android:fontFamily="@font/montserratsemibold"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/or"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/phone_login_layout">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:clickable="false"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserratmedium"
+                    android:background="@color/transparent"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/continue_with_phone"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserratmedium"
+                android:textColor="@color/dimgray"
+                android:text="@string/we_don_t_post_anything_to_facebook"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="7dp"/>
+
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>
